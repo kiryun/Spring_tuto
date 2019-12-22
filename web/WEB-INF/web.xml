@@ -6,7 +6,7 @@
     <!-- application config -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>web/WEB-INF/applicationContext.xml</param-value>
+        <param-value>WEB-INF/applicationContext.xml</param-value>
     </context-param>
 
     <listener>
@@ -20,13 +20,13 @@
         
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>web/WEB-INF/dispatcher-servlet.xml</param-value>
+            <param-value>WEB-INF/dispatcher-servlet.xml</param-value>
         </init-param>
         
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>*.form</url-pattern>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 </web-app>
